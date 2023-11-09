@@ -1,17 +1,12 @@
 import styled from 'styled-components';
 
-export const Main = styled.main`
-  flex: 1;
-`;
-
 export const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 10px;
   border-radius: 10px;
-  width: 340px;
-  height: 340px;
+  width: 335px;
+  height: 255px;
   background: linear-gradient(
       180deg,
       rgba(255, 255, 255, 0) 0%,
@@ -19,6 +14,10 @@ export const CardWrapper = styled.div`
     ),
     #ff6060;
   border-radius: 10px;
+  @media (min-width: 920px) {
+    width: 340px;
+    height: 340px;
+  }
 `;
 
 export const CardTitle = styled.span`
@@ -28,4 +27,5 @@ export const CardTitle = styled.span`
   font-weight: 500;
   line-height: 142.6%;
   width: 300px;
+  padding: 20px;
 `;

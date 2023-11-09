@@ -1,4 +1,4 @@
-import { Main, Box, BoxTitle, CardContainer } from './home';
+import { Main, CardContainer } from './home';
 import Banner from '../../components/Banner';
 import Card from '../../components/Card';
 import { logementsList } from '../../utils/data/logements';
