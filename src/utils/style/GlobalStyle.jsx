@@ -7,8 +7,6 @@ const StyledGlobalStyle = createGlobalStyle`
 
   body {
     margin: 0;
-    display: flex;
-    flex-direction: column;
   }
 `;
 

@@ -5,26 +5,27 @@ import colors from '../../utils/style/colors';
 export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
+  width: 100%;
   max-width: 335px;
   align-items: center;
+  /* padding: 0px 20px; */
   margin: auto;
-  padding-top: 20px;
+  gap: 32px;
   & a:focus {
     text-decoration: underline;
   }
   @media (min-width: 920px) {
-    padding-top: 45px;
+    /* padding: 0px 100px; */
     max-width: 1240px;
-    gap: 720.68px;
   }
 `;
 
 export const HomeLogo = styled.img`
-  height: 46.88px;
+  height: 47px;
   width: 145px;
   @media (min-width: 920px) {
     height: 68px;
-    width: 210.322px;
+    width: 210px;
   }
 `;
 
@@ -41,7 +42,6 @@ export const StyledLink = styled(Link)`
   font-style: normal;
   font-size: 12px;
   font-weight: 500;
-  line-height: 142.6%; /* 34.224px */
   text-align: center;
   color: ${colors.primary};
   text-decoration: none;
