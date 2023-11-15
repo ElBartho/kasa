@@ -6,8 +6,6 @@ export const Root = styled.div`
   align-items: center;
   width: 100%;
   margin: auto;
-  @media (min-width: 920px) {
-  }
 `;
 
 export const HeaderChildWrapper = styled.div`
@@ -19,8 +17,8 @@ export const HeaderChildWrapper = styled.div`
   margin: auto;
   padding: 20px 0px 24px 0px;
   @media (min-width: 920px) {
-    /* max-width: 1240px; */
+    max-width: 1240px;
     gap: 50px;
-    padding: 45px 100px 50px 100px;
+    padding: 45px 0px 50px 0px;
   }
 `;
