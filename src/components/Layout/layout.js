@@ -15,10 +15,11 @@ export const HeaderChildWrapper = styled.div`
   align-items: center;
   width: 100%;
   margin: auto;
-  padding: 20px 0px 24px 0px;
+  padding: 24px 32px;
+  box-sizing: border-box;
   @media (min-width: 920px) {
     max-width: 1240px;
     gap: 50px;
-    padding: 45px 0px 50px 0px;
+    padding: 48px 32px;
   }
 `;

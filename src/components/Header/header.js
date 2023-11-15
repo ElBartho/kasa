@@ -6,16 +6,13 @@ export const NavContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 335px;
   align-items: center;
-  /* padding: 0px 20px; */
   margin: auto;
   gap: 32px;
   & a:focus {
     text-decoration: underline;
   }
   @media (min-width: 920px) {
-    /* padding: 0px 100px; */
     max-width: 1240px;
   }
 `;
