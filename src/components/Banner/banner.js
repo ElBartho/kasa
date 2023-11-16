@@ -1,12 +1,16 @@
 import styled from 'styled-components';
-import HomeBackground from '../../assets/KasaHomeBackground.jpeg';
+import { backgrounds } from '../../utils/style/colors';
 
 export const Box = styled.div`
   display: flex;
   width: 100%;
+  background-color: red;
+  background: ${({ background }) =>
+    background === 'home'
+      ? `url(${backgrounds.home}), rgba(0, 0, 0, 0.3)`
+      : `url(${backgrounds.about}), rgba(0, 0, 0, 0.3)`};
   min-height: 111px;
   align-items: center;
-  background: url(${HomeBackground}), rgba(0, 0, 0, 0.3);
   background-size: cover;
   background-position: 0% 50%;
   background-repeat: no-repeat;

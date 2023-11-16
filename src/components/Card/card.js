@@ -22,7 +22,7 @@ export const CardTitle = styled.span`
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 142.6%;
+  line-height: 100%;
   max-width: 300px;
   padding: 20px;
 `;

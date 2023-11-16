@@ -1,11 +1,15 @@
 import { Box, BoxTitle } from './banner';
 
-function Banner() {
+function Banner({ title, background }) {
   return (
-    <Box>
-      <BoxTitle>Chez vous, partout et ailleurs</BoxTitle>
+    <Box background={background}>
+      <BoxTitle>{title}</BoxTitle>
     </Box>
   );
 }
+
+Banner.defaultProps = {
+  title: '',
+};
 
 export default Banner;

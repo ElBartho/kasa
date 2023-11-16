@@ -1,15 +1,14 @@
 import { Main, CardContainer } from './home';
 import Banner from '../../components/Banner';
 import Card from '../../components/Card';
-import { logementsList } from '../../utils/data/logements';
+import { accomodationsList } from '../../utils/data/accomodations';
 
 function Home() {
-  console.log(logementsList);
   return (
     <Main>
-      <Banner />
+      <Banner title='Chez vous, partout et ailleurs' background='home' />
       <CardContainer>
-        {logementsList.map((card) => (
+        {accomodationsList.map((card) => (
           <Card
             key={card.id}
             title={card.title}

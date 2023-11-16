@@ -1,8 +1,16 @@
+import Banner from '../../components/Banner';
+import Collapse from '../../components/Collapse';
+import { Main } from './about';
+
 function About() {
   return (
-    <div>
-      <h1>À Propos</h1>
-    </div>
+    <Main>
+      <Banner background='about' />
+      <Collapse title='Fiabilité' />
+      <Collapse title='Respect' />
+      <Collapse title='Service' />
+      <Collapse title='Securité' />
+    </Main>
   );
 }
 

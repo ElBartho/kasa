@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-import colors from '../../utils/style/colors';
+import { colors } from '../../utils/style/colors';
 
 export const NavContainer = styled.nav`
   display: flex;
@@ -9,7 +9,7 @@ export const NavContainer = styled.nav`
   align-items: center;
   margin: auto;
   gap: 32px;
-  & a:focus {
+  .active {
     text-decoration: underline;
   }
   @media (min-width: 920px) {
@@ -34,7 +34,7 @@ export const LinkWrapper = styled.div`
   }
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
   text-align: right;
   font-style: normal;
   font-size: 12px;
