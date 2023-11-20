@@ -1,5 +1,5 @@
-import HomeBackground from '../../assets/KasaHomeBackground.jpeg';
-import AboutBackground from '../../assets/KasaAboutBackground.jpeg';
+import HomeBackground from '../../assets/KasaHomeBackground.webp';
+import AboutBackground from '../../assets/KasaAboutBackground.webp';
 
 export const colors = {
   primary: '#FF6060',

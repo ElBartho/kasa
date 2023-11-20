@@ -13,7 +13,7 @@ export const FooterWrapper = styled.footer`
 
 export const LogoFooter = styled.img`
   width: 122px;
-  height: 39.444px;
+  height: 40px;
 `;
 
 export const FooterText = styled.div`

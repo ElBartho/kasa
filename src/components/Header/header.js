@@ -12,9 +12,6 @@ export const NavContainer = styled.nav`
   .active {
     text-decoration: underline;
   }
-  @media (min-width: 920px) {
-    max-width: 1240px;
-  }
 `;
 
 export const HomeLogo = styled.img`
@@ -28,9 +25,9 @@ export const HomeLogo = styled.img`
 
 export const LinkWrapper = styled.div`
   display: flex;
-  gap: 26px;
+  gap: 24px;
   @media (min-width: 920px) {
-    gap: 57px;
+    gap: 56px;
   }
 `;
 

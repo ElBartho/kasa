@@ -8,7 +8,6 @@ export const Main = styled.main`
   width: 100%;
   @media (min-width: 920px) {
     gap: 50px;
-    max-width: 1240px;
   }
 `;
 
@@ -25,7 +24,6 @@ export const CardContainer = styled.div`
     background: #f6f6f6;
     gap: 56px;
     grid-template-columns: repeat(3, calc(28%));
-    max-width: 1240px;
     padding: 56px 0px 40px 0px;
   }
 `;
