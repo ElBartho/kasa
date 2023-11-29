@@ -7,7 +7,6 @@ import {
   Description,
 } from './collapse';
 import { useState } from 'react';
-import styled from 'styled-components';
 import Arrow from '../../assets/arrow.svg';
 
 const Collapse = ({ title, description }) => {
