@@ -4,7 +4,6 @@ import { backgrounds } from '../../utils/style/colors';
 export const Box = styled.div`
   display: flex;
   width: 100%;
-  background-color: red;
   background: ${({ background }) =>
     background === 'home'
       ? `url(${backgrounds.home}), rgba(0, 0, 0, 0.3)`

@@ -19,7 +19,7 @@ export const CollapseSectionHeader = styled.div`
   background-color: ${colors.primary};
   width: 100%;
   border-radius: 5px;
-  padding: 10px 10px 10px 15px;
+  padding: 8px 8px 8px 16px;
   box-sizing: border-box;
 `;
 
@@ -41,9 +41,8 @@ export const CollapseSectionIcon = styled.img`
   justify-content: center;
   align-items: center;
   transition: transform 0.3s ease;
-  &.rotate {
-    transform: rotate(-180deg);
-  }
+
+  transform: ${({ isOpen }) => (isOpen ? 'rotate(-180deg)' : '')};
   @media (min-width: 920px) {
     width: 32px;
     height: 32px;
@@ -53,11 +52,7 @@ export const CollapseSectionIcon = styled.img`
 export const CollapseSectionDescription = styled.div`
   transition: max-height 0.5s;
   overflow: hidden;
-  max-height: 0;
-  &.open {
-    opacity: 1;
-    max-height: 300px;
-  }
+  max-height: ${({ isOpen }) => (isOpen ? '300px' : '0')};
 `;
 
 export const Description = styled.div`

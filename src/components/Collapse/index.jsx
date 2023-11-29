@@ -7,6 +7,7 @@ import {
   Description,
 } from './collapse';
 import { useState } from 'react';
+import styled from 'styled-components';
 import Arrow from '../../assets/arrow.svg';
 
 const Collapse = ({ title, description }) => {
@@ -22,10 +23,10 @@ const Collapse = ({ title, description }) => {
         <CollapseSectionIcon
           src={Arrow}
           onClick={toggleSection}
-          className={`${isOpen ? 'rotate' : ''}`}
+          isOpen={isOpen}
         />
       </CollapseSectionHeader>
-      <CollapseSectionDescription className={`${isOpen ? 'open' : ''}`}>
+      <CollapseSectionDescription isOpen={isOpen}>
         <Description>{description}</Description>
       </CollapseSectionDescription>
     </CollapseSection>
