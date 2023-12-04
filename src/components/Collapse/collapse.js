@@ -8,7 +8,7 @@ export const CollapseSection = styled.div`
   width: 100%;
   jusitfy-content: center;
   @media (min-width: 920px) {
-    width: 85%;
+    width: calc(100% - 200px);
   }
 `;
 
