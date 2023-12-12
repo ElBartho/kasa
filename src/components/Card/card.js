@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-export const CardWrapper = styled.div`
+export const CardWrapper = styled(Link)`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -12,6 +13,7 @@ export const CardWrapper = styled.div`
     ),
     #ff6060;
   aspect-ratio: 16 / 9;
+  text-decoration: none;
   @media (min-width: 920px) {
     aspect-ratio: 1;
   }

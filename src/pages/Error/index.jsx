@@ -1,8 +1,12 @@
+import { Main, Title, SubTitle, HomePageLink } from './error';
+
 function Error() {
   return (
-    <div>
-      <h1>Error 404</h1>
-    </div>
+    <Main>
+      <Title>404</Title>
+      <SubTitle>Oups! La page que vous demandez n'existe pas.</SubTitle>
+      <HomePageLink to='/'>Retourner sur la page d'accueil</HomePageLink>
+    </Main>
   );
 }
 

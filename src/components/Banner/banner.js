@@ -4,8 +4,8 @@ import { backgrounds } from '../../utils/style/colors';
 export const Box = styled.div`
   display: flex;
   width: 100%;
-  background: ${({ background }) =>
-    background === 'home'
+  background: ${({ $background }) =>
+    $background === 'home'
       ? `url(${backgrounds.home}), rgba(0, 0, 0, 0.3)`
       : `url(${backgrounds.about}), rgba(0, 0, 0, 0.3)`};
   min-height: 111px;

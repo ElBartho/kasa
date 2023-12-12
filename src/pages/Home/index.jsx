@@ -11,15 +11,9 @@ function Home() {
         {accomodationsList.map((card) => (
           <Card
             key={card.id}
+            id={card.id}
             title={card.title}
-            description={card.description}
             cover={card.cover}
-            pictures={card.pictures}
-            host={card.host}
-            rating={card.rating}
-            location={card.location}
-            equipments={card.equipments}
-            tags={card.tags}
           />
         ))}
       </CardContainer>
