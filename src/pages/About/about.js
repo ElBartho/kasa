@@ -10,3 +10,15 @@ export const Main = styled.main`
     gap: 50px;
   }
 `;
+
+export const CollapseWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  width: 100%;
+  @media (min-width: 920px) {
+    box-sizing: border-box;
+    padding: 0 80px;
+  }
+`;

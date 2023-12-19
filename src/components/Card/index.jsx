@@ -1,8 +1,8 @@
 import { CardWrapper, CardTitle } from './card';
 
-function Card({ title }) {
+function Card({ id, title, cover }) {
   return (
-    <CardWrapper>
+    <CardWrapper to={`/accomodation/${id}`}>
       <CardTitle>{title}</CardTitle>
     </CardWrapper>
   );

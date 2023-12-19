@@ -26,7 +26,16 @@ const Collapse = ({ title, description }) => {
         />
       </CollapseSectionHeader>
       <CollapseSectionDescription isOpen={isOpen}>
-        <Description>{description}</Description>
+        <Description>
+          {description instanceof Array
+            ? description.map((str, index) => (
+                <div key={index}>
+                  {str}
+                  <br />
+                </div>
+              ))
+            : description}
+        </Description>
       </CollapseSectionDescription>
     </CollapseSection>
   );
